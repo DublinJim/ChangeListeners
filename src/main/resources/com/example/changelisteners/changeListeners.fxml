@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.changelisteners.Controller">
+
+<!--    <Slider fx:id="slider1" layoutX="187.0" layoutY="309.0" prefHeight="14.0" prefWidth="253.0"/>-->
+    <Text fx:id="txt1" layoutX="250.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="250.0">
+      <font>
+         <Font fx:id="fontSize" size="14.0" />
+      </font></Text>
+    <Label layoutX="47.0" layoutY="21.0" text="Change Listeners" textFill="#1f682b">
+        <font>
+            <Font name="Stencil" size="12.0" />
+        </font>
+    </Label>
+   <Text fx:id="txt2Instr" layoutX="47.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Set Font Size" textAlignment="CENTER">
+      <font>
+         <Font fx:id="fontSize1" name="Stencil" size="14.0" />
+      </font>
+   </Text>
+
+</AnchorPane>

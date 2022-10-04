@@ -10,9 +10,9 @@ import java.io.IOException;
 public class ChangeListenersMain extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(ChangeListenersMain.class.getResource("hello-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(ChangeListenersMain.class.getResource("changeListeners.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("Hello!");
+        stage.setTitle("Change Listener");
         stage.setScene(scene);
         stage.show();
     }
