@@ -1,11 +1,8 @@
 package com.example.changelisteners;
 
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Slider;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.Background;
 import javafx.scene.layout.Border;
 import javafx.scene.paint.Paint;
 import javafx.scene.text.Font;
@@ -27,15 +24,12 @@ public class Controller implements Initializable {
         setSlider();
         txt2Instr.setFill(Paint.valueOf("#1f682b"));
         root.getChildren().add(slider1);
-        slider1.valueProperty().addListener(new ChangeListener<>() {
-            @Override
-            public void changed(ObservableValue<? extends Number> observableValue, Number number, Number t1) {
+        slider1.valueProperty().addListener((observableValue, number, t1) -> {
 
-                System.out.println("slider changed " + slider1.getValue());
-                fontSize = Font.font(slider1.getValue());
-                txt1.setFont(fontSize);
+            System.out.println("slider changed " + slider1.getValue());
+            fontSize = Font.font(slider1.getValue());
+            txt1.setFont(fontSize);
 
-            }
         });
     }
 
